@@ -4,7 +4,7 @@ import { Http } from '@angular/http';
 @Component({
     moduleId: module.id,
     selector: 'listagem',
-    templateUrl: './listagem.component'
+    templateUrl: './listagem.component.html'
 })
 
 export class ListagemComponent{

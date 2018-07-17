@@ -7,10 +7,17 @@ import {CadastroComponent} from './cadastro/cadastro.component';
 import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {ListagemComponent} from './listagem/listagem.component';
+import { routing } from './app.routes';
 
 @NgModule({ //tranforma essa classe em ts em modulo do angular
-    imports: [BrowserModule, FotoModule, PainelModule, HttpModule ],
-    declarations: [AppComponent, CadastroComponent], //componentes importados no meu modulo
+    imports: [
+        BrowserModule, 
+        routing,
+        FotoModule, 
+        PainelModule, 
+        HttpModule 
+    ],
+    declarations: [AppComponent, CadastroComponent, ListagemComponent], //componentes importados no meu modulo
     bootstrap: [AppComponent] //quando o modulo for carregado carregar Appcomponent  
 })
 export class AppModule{}
