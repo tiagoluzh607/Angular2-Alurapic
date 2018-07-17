@@ -13,10 +13,10 @@ export class AppComponent{
 
     constructor(http : Http){ //injeção de dependencia de http por type usando typescript
         
-        let stream = http.get('v1/fotos');
-        stream.subscribe(res => {
-            this.fotos = res.json();
-            console.log(this.fotos);
-        });
+        http.get('v1/fotos')
+            .subscribe(res => {
+                this.fotos = res.json();
+                console.log(this.fotos);
+            }, erro => console.log(erro));
     }
 }
