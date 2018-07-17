@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {ListagemComponent} from './listagem/listagem.component';
 import { routing } from './app.routes';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({ //tranforma essa classe em ts em modulo do angular
     imports: [
@@ -15,7 +16,8 @@ import { routing } from './app.routes';
         routing,
         FotoModule, 
         PainelModule, 
-        HttpModule 
+        HttpModule,
+        FormsModule
     ],
     declarations: [AppComponent, CadastroComponent, ListagemComponent], //componentes importados no meu modulo
     bootstrap: [AppComponent] //quando o modulo for carregado carregar Appcomponent  
