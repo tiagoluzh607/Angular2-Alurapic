@@ -11,6 +11,13 @@ export class CadastroComponent{
     
     foto: FotoComponent = new FotoComponent();
     
+    constructor(){
+        this.foto.titulo = "Indefinido";
+        this.foto.url = "Indefinida";
+        this.foto.descricao = "Indefinida";
+    }
+    
+    
     cadastrar(event: Event){
         event.preventDefault();
         console.log(this.foto);
