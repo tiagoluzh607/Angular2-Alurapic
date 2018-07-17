@@ -1,6 +1,23 @@
 # Angular2-Alurapic
 Referente ao curso de angular 2 do alura
 
+Para ativar o Compilador de typescript em tempo real
+entrar na pasta client e rodar (se for a primeiravez rodar um npm install antes)
+$ npm start
+
+
+em outro terminal
+
+Para startar o projeto
+entrar na pasta servidor e rodar
+$npm start
+
+
+
+
+
+
+
 
 Preparação do ambiente
 Nosso foco é o Angular, porém alguns recursos do framework necessitam de um servidor web rodando localmente em sua máquina. Para que você não caia em questões de infraestrutura que dizem respeito a isso, disponibilizamos o projeto Alurapic com tudo necessário para subir um servidor web localmente.
