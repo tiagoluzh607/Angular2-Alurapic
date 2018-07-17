@@ -1,15 +1,16 @@
 # Angular2-Alurapic
 Referente ao curso de angular 2 do alura
 
-Para ativar o Compilador de typescript em tempo real
+# Para ativar o Compilador de typescript em tempo real
 entrar na pasta client e rodar (se for a primeiravez rodar um npm install antes)
 $ npm start
 
 
 em outro terminal
 
-Para startar o projeto
+# Para startar o projeto
 entrar na pasta servidor e rodar
+
 $npm start
 
 
