@@ -4,5 +4,9 @@
         "painel": {},
         "router-outlet": {}
     },
-    "attributes": {}
+    "attributes": {
+        "[routerlink]": {
+            "context": "a"
+        }
+    }
 }
