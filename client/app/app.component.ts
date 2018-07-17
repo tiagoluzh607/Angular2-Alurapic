@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
     moduleId: module.id, //permite achar template em diretorio relativo
@@ -6,4 +7,16 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html' //qual é o template obs: só funciona o caminho relativo quando o module.id esta junto
 })
 
-export class AppComponent{ }
+export class AppComponent{ 
+
+    fotos: Object[] = [];
+
+    constructor(http : Http){ //injeção de dependencia de http por type usando typescript
+        
+        let stream = http.get('v1/fotos');
+        stream.subscribe(res => {
+            this.fotos = res.json();
+            console.log(this.fotos);
+        });
+    }
+}
